@@ -3,8 +3,4 @@ services:
     name: n8n
     env: docker
     plan: free
-    image: docker.io/n8nio/n8n:latest
-
-    # Рекомендуется заменить TAG_OR_SPECIFIC_VERSION на конкретный тег/диджест,
-    # чтобы обновления происходили только когда вы измените тег в репо.
-    # Не добавляйте сюда пароли/ключи — установите их через Render UI.
+    autoDeploy: true
